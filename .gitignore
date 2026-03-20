@@ -124,3 +124,5 @@ ProjectSettings/ProjectVersion.txt
 
 /Assets/Plugins/Android64/*
 Assets/Editor/PreloadSigningAlias.cs
+/windows_migration.md
+.DS_Store
