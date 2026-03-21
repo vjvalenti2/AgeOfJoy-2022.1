@@ -231,7 +231,7 @@ public class DefaultControlMap : ControlMapConfiguration
         AddMap(LC.JOYPAD_Y, new string[] { CM.GAMEPAD_Y, CM.VR_CONTROLLER_Y, CM.KEYBOARD_R, CM.KEYBOARD_3 });
         AddMap(LC.JOYPAD_START, new string[] { CM.GAMEPAD_START, CM.VR_CONTROLLER_START, CM.KEYBOARD_I });
         //some games (like Namco Anniversary Collection) use the Player 2 start button to select a game
-        AddMap(LC.JOYPAD_START, new string[] { CM.KEYBOARD_7 }, 2);
+        AddMap(LC.JOYPAD_START, new string[] { CM.KEYBOARD_7 }, null, 2);
         AddMap(LC.JOYPAD_SELECT, new string[] { CM.GAMEPAD_SELECT, CM.VR_CONTROLLER_SELECT, CM.KEYBOARD_U, CM.KEYBOARD_6 });
 
         AddMap(LC.JOYPAD_UP, new string[] { CM.VR_CONTROLLER_LEFT_THUMBSTICK, CM.GAMEPAD_LEFT_THUMBSTICK }, "axis");
