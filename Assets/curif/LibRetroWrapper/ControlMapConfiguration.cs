@@ -232,7 +232,7 @@ public class DefaultControlMap : ControlMapConfiguration
         AddMap(LC.JOYPAD_START, new string[] { CM.GAMEPAD_START, CM.VR_CONTROLLER_START, CM.KEYBOARD_I });
         //some games (like Ms Pac-Man/Galaga 20th Anniversary) use the Player 2 start button to select a different game
         AddMap(LC.JOYPAD_START, new string[] { CM.KEYBOARD_7 }, "button", 2);
-        AddMap(LC.JOYPAD_SELECT, new string[] { CM.GAMEPAD_SELECT, CM.VR_CONTROLLER_SELECT, CM.KEYBOARD_6 });
+        AddMap(LC.JOYPAD_SELECT, new string[] { CM.GAMEPAD_SELECT, CM.VR_CONTROLLER_SELECT,CM.KEYBOARD_U,CM.KEYBOARD_6 });
 
         AddMap(LC.JOYPAD_UP, new string[] { CM.VR_CONTROLLER_LEFT_THUMBSTICK, CM.GAMEPAD_LEFT_THUMBSTICK }, "axis");
         AddMap(LC.JOYPAD_DOWN, new string[] { CM.VR_CONTROLLER_LEFT_THUMBSTICK, CM.GAMEPAD_LEFT_THUMBSTICK }, "axis");
@@ -262,8 +262,8 @@ public class DefaultControlMap : ControlMapConfiguration
         AddMap(LC.JOYPAD_L3, new string[] { CM.VR_CONTROLLER_LEFT_THUMBSTICK_PRESS, CM.GAMEPAD_LEFT_THUMBSTICK_PRESS });
         AddMap(LC.JOYPAD_R3, new string[] { CM.VR_CONTROLLER_RIGHT_THUMBSTICK_PRESS, CM.GAMEPAD_RIGHT_THUMBSTICK_PRESS });
 
-        AddMap(LC.EXIT, new string[] { CM.VR_CONTROLLER_RIGHT_GRIP, CM.GAMEPAD_LEFT_BUMPER, CM.KEYBOARD_ESC, CM.KEYBOARD_7 });
-        AddMap(LC.INSERT, CM.GAMEPAD_SELECT, CM.KEYBOARD_U);
+        AddMap(LC.EXIT, new string[] { CM.VR_CONTROLLER_RIGHT_GRIP, CM.GAMEPAD_LEFT_BUMPER, CM.KEYBOARD_ESC });
+        AddMap(LC.INSERT, CM.GAMEPAD_SELECT, CM.KEYBOARD_U, CM.KEYBOARD_6);
 
         AddMap(LC.MOUSE_X, new string[] { CM.VR_CONTROLLER_RIGHT_THUMBSTICK, CM.GAMEPAD_RIGHT_THUMBSTICK, CM.MOUSE }, "axis");
         AddMap(LC.MOUSE_Y, new string[] { CM.VR_CONTROLLER_RIGHT_THUMBSTICK, CM.GAMEPAD_RIGHT_THUMBSTICK, CM.MOUSE }, "axis");
