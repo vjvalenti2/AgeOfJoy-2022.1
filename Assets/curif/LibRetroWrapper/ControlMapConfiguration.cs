@@ -222,7 +222,7 @@ public class DefaultControlMap : ControlMapConfiguration
     {
         mapList = new();
 
-        AddMap(LC.MODIFIER, new string[] { CM.VR_CONTROLLER_LEFT_GRIP, CM.KEYBOARD_I });
+        AddMap(LC.MODIFIER, new string[] { CM.VR_CONTROLLER_LEFT_GRIP });
 
         //fire with b-button and trigger.
         AddMap(LC.JOYPAD_B, new string[] { CM.VR_CONTROLLER_B, CM.GAMEPAD_B, CM.KEYBOARD_ENTER, CM.KEYBOARD_W, CM.KEYBOARD_1 });
@@ -230,9 +230,9 @@ public class DefaultControlMap : ControlMapConfiguration
         AddMap(LC.JOYPAD_X, new string[] { CM.GAMEPAD_X, CM.VR_CONTROLLER_X, CM.KEYBOARD_E, CM.KEYBOARD_2 });
         AddMap(LC.JOYPAD_Y, new string[] { CM.GAMEPAD_Y, CM.VR_CONTROLLER_Y, CM.KEYBOARD_R, CM.KEYBOARD_3 });
         AddMap(LC.JOYPAD_START, new string[] { CM.GAMEPAD_START, CM.VR_CONTROLLER_START, CM.KEYBOARD_I });
-        //some games (like Namco Anniversary Collection) use the Player 2 start button to select a game
-        AddMap(LC.JOYPAD_START, new string[] { CM.KEYBOARD_7 }, null, 2);
-        AddMap(LC.JOYPAD_SELECT, new string[] { CM.GAMEPAD_SELECT, CM.VR_CONTROLLER_SELECT, CM.KEYBOARD_U, CM.KEYBOARD_6 });
+        //some games (like Ms Pac-Man/Galaga 20th Anniversary) use the Player 2 start button to select a different game
+        AddMap(LC.JOYPAD_START, new string[] { CM.KEYBOARD_7 }, "button", 2);
+        AddMap(LC.JOYPAD_SELECT, new string[] { CM.GAMEPAD_SELECT, CM.VR_CONTROLLER_SELECT, CM.KEYBOARD_6 });
 
         AddMap(LC.JOYPAD_UP, new string[] { CM.VR_CONTROLLER_LEFT_THUMBSTICK, CM.GAMEPAD_LEFT_THUMBSTICK }, "axis");
         AddMap(LC.JOYPAD_DOWN, new string[] { CM.VR_CONTROLLER_LEFT_THUMBSTICK, CM.GAMEPAD_LEFT_THUMBSTICK }, "axis");
